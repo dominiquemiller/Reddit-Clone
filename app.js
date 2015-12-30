@@ -1,4 +1,18 @@
-angular.module('flapperNews', [])
+angular.module('flapperNews', ['ui.router'])
+  .config([
+    '$stateProvider',
+    '$urlRouteProvider',
+    function($stateProvider, $urlRouteProvider){
+
+      $stateProvider
+        .state('home', {
+         url: '/home',
+         templateUrl: '/home.html',
+         controller: 'MainCtrl'
+        });
+
+      $urlRouteProvider.otherwise('home');
+    }])
 
   .factory('posts', [function(){
     var stuff = {
@@ -26,4 +40,5 @@ angular.module('flapperNews', [])
         post.upvotes += 1;
       };
     }
+    
   ]);
