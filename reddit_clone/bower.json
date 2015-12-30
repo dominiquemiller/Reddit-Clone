@@ -1,0 +1,23 @@
+{
+  "name": "reddit_clone",
+  "homepage": "https://github.com/dominiquemiller/Reddit-Clone",
+  "authors": [
+    "Dominique Miller <dominique.p.miller@gmail.com>"
+  ],
+  "description": "angular and ROR app",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.6"
+  }
+}
